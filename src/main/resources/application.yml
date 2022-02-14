@@ -4,8 +4,10 @@ server:
 spring:
   application:
     name: discoveryservice
-# register-with-eureka
+# eureka : 외부에서 다른 microservice를 등록할 수 있게 도와준다.
+# 어떠한 서버가 어느 위치에 등록되어있는지 찾아주는 역할을 Service Discovery라고 부르는데 우리는
+# Netflix Eureka를 사용할 것이다.
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: false   # 기본이 true값인데 자신의 정보를 자신에게 등록하게 되어 의미 없는 작업이 되버린다
     fetch-registry: false
