@@ -1,0 +1,11 @@
+server:
+  port: 8761
+# Microservice에 부여하는 고유한 ID
+spring:
+  application:
+    name: discoveryservice
+# register-with-eureka
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
